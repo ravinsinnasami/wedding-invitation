@@ -8,6 +8,7 @@ import Gallery from '../components/Gallery';
 // import VenueMap from '../components/VenueMap';
 import Footer from '../components/Footer';
 import AudioPlayer from '../components/AudioPlayer';
+import GuestWishes from '../components/GuestWishes';
 
 interface HomeProps {
   isAudioPlaying: boolean;
@@ -27,6 +28,7 @@ export default function Home({ isAudioPlaying, audioSrc }: HomeProps) {
       <CoupleStory />
       <Gallery />
       {/* <VenueMap /> */}
+      <GuestWishes />
       <Footer />
       <AudioPlayer audioSrc={audioSrc} initialPlayingState={isAudioPlaying} />
     </div>
